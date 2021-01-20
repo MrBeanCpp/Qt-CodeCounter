@@ -23,7 +23,10 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget#Widget{ background: rgb(25,25,25); }
-QToolTip,QToolButton,QPushButton,QLineEdit,QTextEdit,QLabel{font-family:Consolas }
+QToolTip,QToolButton,QPushButton,QLineEdit,QTextEdit,QLabel{
+	font-family:Consolas;
+	font-size:12px;
+}
 
 QToolButton {
     color:white;
@@ -196,7 +199,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical
          </property>
          <property name="styleSheet">
           <string notr="true">QListWidget{background-color: rgba(79, 80, 80,100);}
-QCheckBox{color:white;font-family:Consolas}</string>
+QCheckBox{color:white;font-family:Consolas;font-size:12px;}</string>
          </property>
          <property name="horizontalScrollBarPolicy">
           <enum>Qt::ScrollBarAsNeeded</enum>
@@ -344,13 +347,17 @@ QCheckBox{color:white;font-family:Consolas}</string>
       <property name="font">
        <font>
         <family>Consolas</family>
+        <pointsize>-1</pointsize>
        </font>
       </property>
       <property name="toolTip">
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ある物&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="styleSheet">
-       <string notr="true">QProgressBar,QFrame{color: rgb(193, 255, 237);}</string>
+       <string notr="true">QProgressBar,QFrame{
+	color: rgb(193, 255, 237);
+	font-size:12px;
+}</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::Panel</enum>
@@ -371,6 +378,7 @@ QCheckBox{color:white;font-family:Consolas}</string>
       <property name="font">
        <font>
         <family>Consolas</family>
+        <pointsize>-1</pointsize>
        </font>
       </property>
       <property name="toolTip">
@@ -381,6 +389,7 @@ QCheckBox{color:white;font-family:Consolas}</string>
 QProgressBar{
         border: none;/*否则改不了颜色*/
         color: white;
+		font-size:12px;
         background: rgba(80, 80, 80, 100);
 }
 QProgressBar::chunk {
@@ -428,6 +437,7 @@ QProgressBar::chunk {
    <property name="styleSheet">
     <string notr="true">QCheckBox{
 	color:white;
+	font-size:12px;
 	background-color:rgba(100,100,100,100);
 }
 
@@ -465,6 +475,7 @@ QCheckBox::indicator:checked
    <property name="styleSheet">
     <string notr="true">QCheckBox{
 	color:white;
+	font-size:12px;
 	background-color:rgba(100,100,100,100);
 }
 
@@ -499,11 +510,12 @@ QCheckBox::indicator:checked
       <property name="font">
        <font>
         <family>Consolas</family>
-        <pointsize>12</pointsize>
+        <pointsize>-1</pointsize>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(255, 222, 223);</string>
+       <string notr="true">color: rgb(255, 222, 223);
+font-size:16px</string>
       </property>
       <property name="text">
        <string>Blank</string>
@@ -518,11 +530,11 @@ QCheckBox::indicator:checked
       <property name="font">
        <font>
         <family>Consolas</family>
-        <pointsize>14</pointsize>
+        <pointsize>-1</pointsize>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">font-size:19px;</string>
       </property>
       <property name="text">
        <string>0</string>
@@ -552,11 +564,12 @@ QCheckBox::indicator:checked
       <property name="font">
        <font>
         <family>Consolas</family>
-        <pointsize>12</pointsize>
+        <pointsize>-1</pointsize>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(255, 222, 223);</string>
+       <string notr="true">color: rgb(255, 222, 223);
+font-size:16px;</string>
       </property>
       <property name="text">
        <string>Comment</string>
@@ -571,11 +584,11 @@ QCheckBox::indicator:checked
       <property name="font">
        <font>
         <family>Consolas</family>
-        <pointsize>14</pointsize>
+        <pointsize>-1</pointsize>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">font-size:19px;</string>
       </property>
       <property name="text">
        <string>0</string>
@@ -590,9 +603,9 @@ QCheckBox::indicator:checked
   <widget class="QWidget" name="widget_line" native="true">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>140</x>
      <y>230</y>
-     <width>321</width>
+     <width>421</width>
      <height>121</height>
     </rect>
    </property>
@@ -602,11 +615,12 @@ QCheckBox::indicator:checked
       <property name="font">
        <font>
         <family>Consolas</family>
-        <pointsize>12</pointsize>
+        <pointsize>-1</pointsize>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(255, 222, 223);</string>
+       <string notr="true">color: rgb(255, 222, 223);
+font-size:16px;</string>
       </property>
       <property name="text">
        <string>Line</string>
@@ -621,11 +635,14 @@ QCheckBox::indicator:checked
       <property name="font">
        <font>
         <family>Consolas</family>
-        <pointsize>72</pointsize>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">font: 96px &quot;Consolas&quot;;</string>
       </property>
       <property name="text">
        <string>0</string>
@@ -739,7 +756,7 @@ QCheckBox::indicator:checked
     <item>
      <widget class="QLabel" name="label_title">
       <property name="styleSheet">
-       <string notr="true">font: 10pt &quot;Consolas&quot;;</string>
+       <string notr="true">font: 13px &quot;Consolas&quot;;</string>
       </property>
       <property name="text">
        <string>Title</string>
@@ -846,7 +863,7 @@ QPushButton:hover{
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>C:/Users/18134/Pictures/表情包/干得漂亮.jpg</pixmap>
+    <pixmap resource="res.qrc">:/wellDone.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -861,7 +878,7 @@ QPushButton:hover{
      <x>720</x>
      <y>70</y>
      <width>111</width>
-     <height>44</height>
+     <height>52</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="Suffix">
@@ -900,7 +917,7 @@ p, li { white-space: pre-wrap; }
      <x>720</x>
      <y>130</y>
      <width>111</width>
-     <height>44</height>
+     <height>52</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="Comment">
