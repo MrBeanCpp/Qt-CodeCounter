@@ -1,0 +1,12 @@
+1.加入右键菜单？NO
+2.popen弹出cmd窗口，改用QProcess
+    如果想隐藏非控制台程序，可以直接使用Win API（CreateProcess + 建立管道）
+    我直接QDirIterator！
+
+3.多行注释支持//NONONO 涉及到字符串内干扰，判断繁琐降低效率，且不同语言"" '' \' \"不同，暂且不支持
+4.多文件夹选择 ×
+5.直接paintEvent Draw 透明背景 （覆盖在磨砂效果上）
+    设置控件透明背景
+6.无边框窗口，去掉标题栏，直接自定义标题栏（否则，在底层白色情况下，看不清标题栏）
+7.其实可以开单独线程，专用于I/O(write/read Ini)，防止阻塞UI
+8.使用QTimeLine(动画老祖)控制伸缩动画(香得一匹)，而非QAbstractAnimation类簇(拉跨，不稳定)
