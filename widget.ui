@@ -636,7 +636,6 @@ font-size:16px;</string>
        <font>
         <family>Consolas</family>
         <pointsize>-1</pointsize>
-        <weight>50</weight>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -730,7 +729,7 @@ font-size:16px;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="res.qrc">:/ICON_3.ico</pixmap>
+       <pixmap resource="res.qrc">:/images/ICON_3.ico</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -863,7 +862,7 @@ QPushButton:hover{
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="res.qrc">:/wellDone.jpg</pixmap>
+    <pixmap resource="res.qrc">:/images/wellDone.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

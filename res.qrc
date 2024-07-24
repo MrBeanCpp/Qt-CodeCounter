@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>ICON_2.ico</file>
-        <file>ICON_3.ico</file>
-        <file>wellDone.jpg</file>
+        <file>images/ICON_3.ico</file>
+        <file>images/wellDone.jpg</file>
     </qresource>
 </RCC>
